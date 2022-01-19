@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+    <body>
+      {% include nav.html %}
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row vertical-align">
+					<div class="col-xs-8">
+						<h1 class="display-3 header">
+							<span class="audrey">anxiety</span><span class="burnett">counselling</span>
+						</h1>
+						<h3 class="sub">Private Counselling and Psychotherapy</h3>
+					</div>
+					<div class="col-xs-4">
+						<img class="img-responsive" width="80%" src="assets/img/bacp_logo.jpg"></img>
+					</div>
+				</div>
+
+
+				<div class="alert alert-success" style="margin-top: 20px;" role="alert">
+					<strong>Coronavirus update:</strong> due to the ongoing coronavirus measures, I cannot currently offer in-person sessions. However, sessions are available via Skype / FaceTime or phone - please contact me to arrange.
+				</div>
+
+				<div class="row contact-bar">
+					<div class="col-sm-12" style="text-align: right">
+						<span class="glyphicon glyphicon-phone-alt"></span>&nbsp;{{site.phone}}<br/>
+						<span class="glyphicon glyphicon-phone"></span>&nbsp;{{site.mobile}}<br/>
+						<a href="mailto:{{site.email}}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{site.email}}</a>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>		
+
+		<hr/>
+		
+		<div class="container">
+			<p class="lead"">Are you feeling Anxious?</p>
+		</div>
+
+		{{ content }}
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">How to find me</h4>
+					</div>
+					<div class="modal-body google-maps">
+						<iframe src="{{ site.maplink}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% include javascripts.html %}
+    </body>
+</html>

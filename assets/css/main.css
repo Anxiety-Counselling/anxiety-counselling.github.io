@@ -1,0 +1,88 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.contact-bar {
+	margin-top: 30px;
+	color: #888888;
+}
+
+img[alt=portrait] { width: 25%; }
+
+.jumbotron {
+	background: #FFFFFF;
+	background-image: url("img/feather.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-blend-mode: darken, luminosity;
+	background-color: rgba(255,255,255,0.5);
+	margin-bottom: 0px;
+	padding: 30px;
+	padding-bottom: 10px;
+}
+
+.header {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1.header {
+	margin-bottom: 0px;
+	/*font-size: 34px;*/
+}
+
+.anxiety {
+	color: #00B2CA;
+	font-weight: 400;
+}
+
+.counselling {
+	color: #00B2CA;
+	font-weight: 600;
+}
+
+.issues-cols {
+  column-count: 2;
+  column-gap: 30px;
+  list-style-type: none;
+}
+
+h3.sub {
+	color: #197278;
+	font-size: 22px;
+	font-weight: 400;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
+
+.btn-primary {
+	background-color: #00B2CA;
+	border-color: #00B2CA;
+}
+.btn-primary:hover {
+	background-color: #99f3ff;
+	border-color: #99f3ff;
+}
